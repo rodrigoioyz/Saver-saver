@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "body": {
+    "comment": "*English Version:*  \n\nReducing the Treasury tax from 20% to 10% makes sense because Cardano’s growth depends on economic activity, not hoarding ADA in a treasury that already has more than enough.  \n\nRight now, the Treasury holds ₳1.67B, and even with the tax cut, it will keep growing, reaching ₳2.2B in 10 years at 10%. That’s a massive amount, and we’re not even considering the ADA that sits unused.  \n\nImagine a town where 20% of every paycheck goes into a community fund. Over time, the fund grows so much that it has way more money than it can even spend on schools, roads, and hospitals, while businesses and workers have less capital to invest and grow.  \n\nNow, what happens if the tax drops to 10%?  \n- The fund still grows, just at a more efficient pace.  \n- People and businesses have more to work with, driving investment and economic activity.  \n- With more transactions and growth, the fund ends up collecting even more money over time.  \n\nThat’s exactly what’s happening with Cardano. The Treasury is well-funded, and keeping the tax too high just slows down growth. The priority should be getting more people staking, boosting DeFi, and increasing network activity, not just stockpiling ADA forever.  \n\nIf we leave the tax at 20%, we make staking less competitive, slow down DeFi adoption, and limit ecosystem growth. Meanwhile, other blockchains keep expanding because they make it easier for users and developers to engage.  \n\nThe problem isn’t having a full Treasury. The real problem is not putting those funds to work while limiting network growth.  \n\nA 10% tax keeps the Treasury strong, but allows the rest of the ecosystem to thrive. Staking gets a boost, DeFi grows faster, and Cardano stays competitive instead of just stockpiling ADA.  \n\n\n*Versión en Español:*  \n\nReducir el impuesto de la Tesorería del 20% al 10% tiene sentido porque el crecimiento de Cardano depende de la actividad económica, no de acumular ADA en una tesorería que ya tiene más que suficiente.  \n\nActualmente, la Tesorería tiene ₳1.67B, y con el recorte de impuestos seguirá creciendo, alcanzando ₳2.2B en 10 años con un 10%. Es una cantidad enorme, y ni siquiera estamos considerando el ADA que queda sin utilizar.  \n\nImagina un pueblo donde el 20% de cada salario se destina a un fondo comunitario. Con el tiempo, el fondo crece tanto que tiene más dinero del que puede gastar en escuelas, carreteras y hospitales, mientras las empresas y los trabajadores tienen menos capital para invertir y crecer.  \n\n¿Qué pasa si el impuesto baja al 10%?  \n- El fondo sigue creciendo, solo que de forma más eficiente.  \n- La gente y las empresas tienen más dinero disponible, lo que impulsa la inversión y la actividad económica.  \n- Con más transacciones y crecimiento, el fondo termina recaudando incluso más dinero a largo plazo.  \n\nEsto es exactamente lo que pasa con Cardano. La Tesorería está bien financiada, y mantener el impuesto alto solo ralentiza el crecimiento. La prioridad debería ser atraer más participación en staking, impulsar DeFi y aumentar la actividad en la red, no simplemente acumular ADA sin usar.  \n\nSi dejamos el impuesto en 20%, hacemos que el staking pierda competitividad frente a otras cadenas, ralentizamos la adopción de DeFi y limitamos el crecimiento del ecosistema. Mientras tanto, otras blockchains siguen creciendo porque facilitan la participación de usuarios y desarrolladores.  \n\nEl problema no es tener una Tesorería llena. El problema real es no poner esos fondos a trabajar mientras limitamos el crecimiento de la red.  \n\nUn 10% mantiene la Tesorería fuerte, pero al mismo tiempo permite que el ecosistema prospere. Staking recibe un impulso, DeFi crece más rápido y Cardano sigue siendo competitivo en lugar de solo acumular ADA.  "
+  },
+  "hashAlgorithm": "blake2b-256"
+}
