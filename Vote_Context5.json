@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "✅ Voting rationale – Yes to “Amaru Node Development 2025”\n\nI'm voting yes because this proposal tackles something essential: making Cardano more resilient by adding a second, independent node implementation. Having just one node (the Haskell one) creates a single point of failure. With Amaru, we get diversity, better performance, and improved tooling for developers and operators.\n\nThe team behind it is top-notch—experienced contributors from trusted entities like Blink Labs, dcSpark, Sundae Labs, Cardano Foundation, and TxPipe. They've laid out a solid budget, clear scopes, and a thoughtful plan to manage and report progress.\n\nThe ask (₳1.5M) is reasonable for the amount of work involved and the long-term benefits it brings. It’s also fully aligned with the Cardano Constitution, including fund governance and transparency.\n\nThis is the kind of infrastructure work that strengthens the network at its core. I'm happy to support it."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
